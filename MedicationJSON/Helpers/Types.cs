@@ -14,7 +14,8 @@ public class UnitNumber
     public required decimal Value { get; set; }
 
     /// <summary>
-    /// The associated SI-unit
+    /// The associated SI-unit. In Addition to an SI-unit, this can also be "IU" to refer to international units.
+    /// Consuming applications should take care, to not attempt to convert IU to a different SI-unit.
     /// </summary>
     [Required]
     public required string Unit { get; set; }
